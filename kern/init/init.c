@@ -51,6 +51,9 @@ kern_init(void) {
     proc_init();                // init process table
 
     ide_init();
+
+    // schedule();  // call schedule here will trigger a bug
+
     fs_init();
 
     usb_sl811_init();
